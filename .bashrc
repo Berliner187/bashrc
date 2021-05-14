@@ -76,21 +76,21 @@ esac
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
 
-    #alias grep='grep --color=auto'
-    #alias fgrep='fgrep --color=auto'
-    #alias egrep='egrep --color=auto'
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
 fi
 
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-#alias ll='ls -l'
-#alias la='ls -A'
-#alias l='ls -CF'
+alias ll='ls -l'
+alias la='ls -A'
+alias l='ls -CF'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -112,19 +112,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
-
-# di=1;4;31;42
-
-# for i in 00{2..8} {0{3,4,9},10}{0..7}
-# do echo -e "$i \e[0;${i}mSubdermatoglyphic text\e[00m  \e[1;${i}mSubdermatoglyphic text\e[00m"
-# done
-
-# for i in 00{2..8} {0{3,4,9},10}{0..7}
-# do for j in 0 1
-#        do echo -e "$j;$i \e[$j;${i}mSubdermatoglyphic text\e[00m"
-#               done
-#           done
+# LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
 
 LS_COLORS=$LS_COLORS:'di=11;33:ln=36' ; export LS_COLORS; clear
 
